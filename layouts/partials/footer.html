@@ -1,0 +1,16 @@
+  <footer class="footer text-center">
+    {{ with .Site.Params.copyright }}
+    {{ . | markdownify }}
+    {{ end }}
+  </footer>
+  
+  <!-- highlight -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+  <script>
+    hljs.configure({languages: []});
+    hljs.initHighlightingOnLoad();
+  </script>
+  
+  </body>
+</html>

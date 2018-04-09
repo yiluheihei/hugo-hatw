@@ -1,0 +1,27 @@
+{{ partial "header.html" . }}
+
+<div class="container">
+  <div class="row py-5">
+    <div class="col-md-9">
+      <article>
+       <div class="post-header">
+          <!-- pages under the root content/ directory does not show title -->
+          {{ if .Page.Dir }}
+            <h1 class="text-uppercase">{{ .Title }}</h1>
+          {{ end }}
+         
+          {{ partial "article-meta.html" . }}
+        </div>
+
+        <div class="content">
+          {{ .Content }}
+        </div>
+        {{ partial "prev-next-post.html" . }}
+      </article> <!-- post -->
+    </div> <!-- col-md-9 -->
+    
+    {{ partial "aside.html" . }}  
+  </div> <!-- row -->
+</div>
+
+{{ partial "footer.html" . }}
