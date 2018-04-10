@@ -48,6 +48,7 @@ h2 {
 
 h3 {
   font-size: 1.25rem;
+  margin-bottom: 1rem;
 }
 
 h4, h5 {
@@ -70,4 +71,9 @@ p {
 
 .article-summary, .article-header {
   margin-bottom: 1rem;
+}
+
+.article-summary + hr {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
