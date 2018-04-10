@@ -35,6 +35,25 @@ code {
   background: #f9f9f9;
 }
 
+/* headings*/
+
+h1 {
+  font-size: 1.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4, h5 {
+  font-size: 1rem;
+}
+
 /* ----------- others ------------- */
 img {
   max-width: 80%;
@@ -49,6 +68,6 @@ p {
   font-size: 0.8rem;
 }
 
-.article-summary {
-  margin-bottom: 1.5rem;
+.article-summary, .article-header {
+  margin-bottom: 1rem;
 }
