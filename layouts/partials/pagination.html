@@ -8,14 +8,14 @@ output post
 {{ range $paginator.Pages }}
   <div class="article-summary">
     <div class="article-header">
-      <h4 class="text-uppercase">
+      <h2 class="text-uppercase">
         <a href="{{ .RelPermalink }}">
           {{ .Title }}
         </a>
       </h2>
-      {{ partial "article-meta" .}}
+      {{ partial "article-meta.html" . }}
     </div>
-    {{ partial "article-summary" . }}
+    {{ partial "article-summary.html" . }}
   </div>
   <hr /> 
 {{ end }}
