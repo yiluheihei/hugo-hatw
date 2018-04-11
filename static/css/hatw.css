@@ -37,43 +37,57 @@ code {
 
 /* headings*/
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.2rem 0;
+  font-weight: 600;
+}
+
 h1 {
   font-size: 1.75rem;
 }
 
 h2 {
   font-size: 1.5rem;
-  font-weight: 600;
 }
 
 h3 {
   font-size: 1.25rem;
-  margin-bottom: 1rem;
 }
 
 h4, h5 {
   font-size: 1rem;
 }
 
-/* ----------- others ------------- */
+.content h2, .content h3, .content h4 {
+  text-align: center;
+}
+
+/* img */
 img {
   max-width: 80%;
 }
 
+/* p */
 p {
   text-align: justify;
   margin-top: 1rem;
 }
 
+/* footnotes in blog post */
 .footnotes {
   font-size: 0.8rem;
 }
 
-.article-summary, .article-header {
+/* article */
+.article-header {
   margin-bottom: 1rem;
 }
 
-.article-summary + hr {
+.article-list + hr {
   margin-bottom: 2rem;
   margin-top: 2rem;
+}
+
+.article-list h2 a {
+  color: black;
 }

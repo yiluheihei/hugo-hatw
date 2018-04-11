@@ -1,9 +1,9 @@
-  <div class="col-md-3 mt-4 d-none d-lg-block">
-    <div class="aside">
-      <div class="base-info pb-3">
-        <h5><a class="text-dark" href= "{{ "/" | relURL }}">{{ .Site.Title }}</a></h5>
+  <div class="col-md-3 d-none d-lg-block">
+    <div class="aside px-4">
+      <div class="base-info">
+        <h3>{{ .Site.Title }}</h3>
         {{ with .Site.Params.bio }}
-          <em class="text-center text-muted font-weight-bold pt-3">{{ . }}</em>
+          <em class="text-center text-muted font-weight-bold">{{ . }}</em>
         {{ end }}
       </div>
       

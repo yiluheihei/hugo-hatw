@@ -6,17 +6,17 @@ output post
 {{ $paginator := .Paginate (where .Data.Pages "Type" "post") }}
 
 {{ range $paginator.Pages }}
-  <div class="article-summary">
+  <section class="article-list">
     <div class="article-header">
-      <h3 class="text-uppercase">
+      <h2 class="text-uppercase">
         <a href="{{ .RelPermalink }}">
           {{ .Title }}
         </a>
-      </h3>
+      </h2>
       {{ partial "article-meta.html" . }}
     </div>
     {{ partial "article-summary.html" . }}
-  </div>
+  </section>
   <hr /> 
 {{ end }}
 
