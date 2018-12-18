@@ -88,6 +88,11 @@ p {
   margin-top: 2rem;
 }
 
-.article-list h2 a {
+/*.article-list h2 a {
   color: black;
+}*/
+
+/* navbar */
+.navbar {
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,0.2);
 }

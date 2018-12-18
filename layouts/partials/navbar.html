@@ -2,7 +2,9 @@
 -- reference
 -- https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c 
 -->
-<nav class="navbar px-5 {{ with .Site.Params.navbar }}{{ .color }} {{ .bg_color }}{{end}} navbar-expand-md justify-content-between">
+
+<nav class="navbar px-0 {{ with .Site.Params.navbar }}{{ .color }} {{ .bg_color }}{{end}} navbar-expand-md ">
+  <div class="container">
   <a href="{{ "/" | relURL }}" class="navbar-brand d-block text-left w-25">{{ .Site.Title }}</a>
   
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
@@ -18,8 +20,6 @@
       {{ end }}
     </ul>
   </div>
-  
   {{ partial "navbar-right.html" . }}
-  
-  
+  </div>
 </nav>
