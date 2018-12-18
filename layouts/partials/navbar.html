@@ -3,7 +3,7 @@
 -- https://medium.com/wdstack/bootstrap-4-custom-navbar-1f6a2da5ed3c 
 -->
 
-<nav class="navbar px-0 {{ with .Site.Params.navbar }}{{ .color }} {{ .bg_color }}{{end}} navbar-expand-md ">
+<nav class="navbar p-0 {{ with .Site.Params.navbar }}{{ .color }} {{ .bg_color }}{{end}} navbar-expand-md ">
   <div class="container">
   <a href="{{ "/" | relURL }}" class="navbar-brand d-block text-left w-25">{{ .Site.Title }}</a>
   
